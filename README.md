@@ -9,3 +9,11 @@ ref. https://www.youtube.com/watch?v=XxeLEMC5jzA&list=PLRx0vPvlEmdCJ1TvP12_ACTV_
 - index.jsp 추가 - language="java" 제거 charset,encoding "UTF-8" 변경
 - 회원가입 폼 html 작성 custom.css 작성 font 설정
 - - -
+
+## 2강 - 데이터베이스 구축 및 연동
+
+- mysql 연동 UserDAO.java UserDTO.java 생성
+- jdbc 설치 후  WEB-INF lib에 추가 
+- db my.ini 추가, shcema.sql 추가 
+- mysql Connector 설치 WEB-INF/lib 폴더 밑에 jar 파일 복사
+- - -
