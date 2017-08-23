@@ -26,3 +26,11 @@ ref. https://www.youtube.com/watch?v=XxeLEMC5jzA&list=PLRx0vPvlEmdCJ1TvP12_ACTV_
 - Tomcat console로 DB 성공 했는지 확인 어려움으로 mysql 실행해서 직접 테이블 확인하는것이 좋음
  - - -
  
+## 4강 - 사용자 친화적인 메시지 알림창 구현하기 
+
+- index.jsp 수정 <%%> ejs 문법 사용 modal 팝업 이용
+- servlet을 통해서 messageContent messageType이 결정됨
+- 
+ - - -
+ 
+ 
