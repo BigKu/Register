@@ -35,7 +35,7 @@ public class UserDAO {
 				return 0; // 이미 존재하는 회원
 			}
 			else {
-				return 1; // 가입 가능한 회원 아이디
+				return 1; // 등록 가능한 회원
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -47,22 +47,21 @@ public class UserDAO {
 				e.printStackTrace();
 			}
 		}
-		return -1; // 데이터베이스 오류
+		return -1; //데이터 베이스 오류 
 	}
 	
-	public int register(UserDTO user) {
+	public int register(String userID, String userPassword, String userName, String userAge, String userGender, String userEmail ) {
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 		String SQL = "INSERT INTO USER VALUES (?, ?, ?, ?, ?, ?)";
 		try {
 			pstmt = conn.prepareStatement(SQL);
-			pstmt.setString(1, user.getUserID());
-			pstmt.setString(2, user.getUserPassword());
-			pstmt.setString(3, user.getUserName());
-			pstmt.setInt(4, user.getUserAge());
-			pstmt.setString(5, user.getUserGender());
-			pstmt.setString(6, user.getUserEmail());
-			rs = pstmt.executeQuery();
+			pstmt.setString(1, userID);
+			pstmt.setString(2, userPassword);
+			pstmt.setString(3, userName);
+			pstmt.setInt(4, Integer.parseInt(userAge));
+			pstmt.setString(5,userGender);
+			pstmt.setString(6, userEmail);
 			return pstmt.executeUpdate();
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -74,6 +73,6 @@ public class UserDAO {
 				e.printStackTrace();
 			}
 		}
-		return -1; // 데이터베이스 오류
+		return -1; // 데이터베이스 오류 
 	}
 }

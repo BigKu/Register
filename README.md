@@ -17,3 +17,12 @@ ref. https://www.youtube.com/watch?v=XxeLEMC5jzA&list=PLRx0vPvlEmdCJ1TvP12_ACTV_
 - db my.ini 추가, shcema.sql 추가 
 - mysql Connector 설치 WEB-INF/lib 폴더 밑에 jar 파일 복사
 - - -
+
+## 3강 - 회원가입 기능 구현하기
+
+- servlet 생성 UserRegisterServlet (Web.xml 수정)
+- UserRegisterServlet에 맞게 userDAO 수정
+  - DB와 JSP 연동시에 디비 접근해서 쿼리문을 수행하는 기능을 하는 클래스
+- Tomcat console로 DB 성공 했는지 확인 어려움으로 mysql 실행해서 직접 테이블 확인하는것이 좋음
+ - - -
+ 
