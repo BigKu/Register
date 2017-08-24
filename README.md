@@ -30,7 +30,11 @@ ref. https://www.youtube.com/watch?v=XxeLEMC5jzA&list=PLRx0vPvlEmdCJ1TvP12_ACTV_
 
 - index.jsp 수정 <%%> ejs 문법 사용 modal 팝업 이용
 - servlet을 통해서 messageContent messageType이 결정됨
-- 
  - - -
  
+## 5강 - 회원가입 중복 체크 및 프로젝트 완료
+
+- @WebServlet("") 입력후 create annotation 해야 함 오른쪽 마우스 누른후 2번째 더블클릭
+- 비밀번호 확인 onkeyup 사용 해서 함수 호출
+- class name panel-warning은 background 빨강색 or 노란색, panel-success 는 초록색이다.
  
